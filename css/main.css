@@ -1,0 +1,328 @@
+/* Main Styles for Health Literacy Tool Shed Sample Site
+Created by Victoria K. Chapman for Communicate Health */
+/* Variables */
+/* Colors */
+/* Fonts */
+/* Mixins */
+/* Variables */
+/* Colors */
+/* Fonts */
+/* Fonts */
+/* Gradients */
+/* Container Blocks */
+/* Buttons */
+/* Media Queries */
+/* Global */
+body {
+  margin: 0;
+  padding: 0;
+  background: #222222; }
+
+.page-container {
+  width: 100%;
+  margin: auto;
+  padding: 0 0 60px 0;
+  background: #fff; }
+
+a {
+  color: #5ca4bb; }
+  a:hover {
+    color: #229857; }
+
+p, label, ul, ol {
+  font-family: "Average Sans", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.02em; }
+
+h2 {
+  font-family: "Average Sans", sans-serif;
+  font-size: 2em;
+  letter-spacing: 0.02em;
+  font-weight: normal; }
+
+/* Accessibility */
+a:focus {
+  outline: 2px solid #de8007; }
+
+/* Header */
+header.header {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  display: block;
+  clear: both;
+  /* Header Logo */
+  /* Header Search Bar */ }
+  header.header .logo {
+    width: 62%;
+    float: left;
+    display: block;
+    padding-top: 35px;
+    padding-bottom: 30px; }
+    header.header .logo .logo-text {
+      display: block;
+      color: #229857;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 1.9em;
+      letter-spacing: -0.01em;
+      margin: 0;
+      padding: 0; }
+      header.header .logo .logo-text .bold {
+        color: #007f9f;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500; }
+    header.header .logo .tagline {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      color: #222222;
+      font-size: 1.26em;
+      letter-spacing: -0.008em;
+      margin: 0;
+      padding: 0; }
+  header.header .search {
+    width: 38%;
+    float: left;
+    display: block;
+    padding-top: 35px;
+    padding-bottom: 30px; }
+    header.header .search label {
+      color: #007f9f;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: 1.1em; }
+
+/* Main Navigation */
+nav.main-nav {
+  width: 100%;
+  background: #084352;
+  display: block;
+  clear: both; }
+  nav.main-nav ul.nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    display: block;
+    clear: both;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
+    nav.main-nav ul.nav li {
+      display: inline-block;
+      text-align: center;
+      padding: 10px 0;
+      width: calc(20% - 4px);
+      font-size: 0.9em; }
+      nav.main-nav ul.nav li a {
+        color: #fff;
+        display: block;
+        padding: 3px 15px;
+        border-right: 1px solid #065165;
+        text-decoration: none; }
+      nav.main-nav ul.nav li:hover {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#007736+0,259959+100 */
+        background: #007736;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #007736 0%, #259959 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #007736 0%, #259959 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #007736 0%, #259959 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007736', endColorstr='#259959',GradientType=0 );
+        /* IE6-9 */ }
+        nav.main-nav ul.nav li:hover a {
+          border-right: 0px;
+          margin-right: 1px; }
+      nav.main-nav ul.nav li:last-child a {
+        border-right: 0; }
+      nav.main-nav ul.nav li:last-child:hover a {
+        margin-right: 0px; }
+    nav.main-nav ul.nav li.current {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#007736+0,259959+100 */
+      background: #007736;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #007736 0%, #259959 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #007736 0%, #259959 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #007736 0%, #259959 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007736', endColorstr='#259959',GradientType=0 );
+      /* IE6-9 */ }
+      nav.main-nav ul.nav li.current a {
+        border-right: 0; }
+
+/* Homepage Hero */
+.home-hero {
+  width: 100%;
+  background: url("../images/hero-background.jpg") 70% 0 repeat-x;
+  background-size: 90%;
+  height: 375px;
+  display: block;
+  position: relative; }
+  .home-hero .hero-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    display: block;
+    clear: both;
+    max-width: 1000px; }
+    .home-hero .hero-container .hero-text {
+      float: left;
+      width: 65%;
+      height: 375px; }
+      .home-hero .hero-container .hero-text:before {
+        content: '';
+        display: inline-block;
+        height: 80%;
+        vertical-align: middle;
+        margin-right: -0.25em;
+        /* Adjusts for spacing */ }
+      .home-hero .hero-container .hero-text h1 {
+        font-size: 2.2em;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+        text-shadow: 1px 1px 0px #084352;
+        vertical-align: middle;
+        width: 100%;
+        display: inline-block; }
+        .home-hero .hero-container .hero-text h1 strong {
+          font-family: "Roboto", sans-serif;
+          font-weight: 700; }
+    .home-hero .hero-container .hero-figure {
+      float: right;
+      width: 35%; }
+      .home-hero .hero-container .hero-figure .image {
+        position: absolute;
+        bottom: 0; }
+        .home-hero .hero-container .hero-figure .image img {
+          width: 100%;
+          max-width: 302px;
+          bottom: 0;
+          display: block;
+          position: relative; }
+
+/* Intro Section */
+#intro {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  display: block;
+  clear: both;
+  max-width: 1000px;
+  margin-top: 80px; }
+  #intro .icon {
+    width: calc(25% - 20px);
+    margin-right: 20px;
+    float: left; }
+    #intro .icon img {
+      width: 100%;
+      max-width: 150px; }
+  #intro .text {
+    width: calc(75% - 80px);
+    float: left;
+    padding-right: 80px; }
+    #intro .text p {
+      font-size: 1.4em;
+      line-height: 1.8em;
+      letter-spacing: 0.02em;
+      margin: 5px 0 10px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300; }
+      #intro .text p strong {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        color: #084352; }
+      #intro .text p a {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500; }
+
+/* Form Section */
+#measure-form {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  display: block;
+  clear: both;
+  max-width: 1000px;
+  margin-top: 70px; }
+  #measure-form form {
+    width: 100%;
+    display: block; }
+
+form label {
+  width: 25%;
+  display: inline-block; }
+form input[type="text"], form input[type="email"] {
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  height: 18px;
+  margin: 10px 0 25px;
+  display: inline-block;
+  width: 65%;
+  max-width: 725px;
+  font-family: "Average Sans", sans-serif;
+  font-size: 1em; }
+form textarea {
+  clear: both;
+  width: 95%;
+  display: block;
+  max-width: 990px;
+  padding: 5px;
+  border: 1px solid #a4a4a4;
+  font-family: "Average Sans", sans-serif;
+  font-size: 1em; }
+form input[type="submit"] {
+  font-family: "Average Sans", sans-serif;
+  background: #222222;
+  color: #fff;
+  padding: 8px 18px;
+  border: 0px;
+  font-size: 1.18em;
+  letter-spacing: 0.03em; }
+  form input[type="submit"]:hover {
+    background: #229857;
+    cursor: pointer; }
+
+/* Footer */
+footer.footer {
+  background: #222222;
+  color: #fff;
+  bottom: 0;
+  padding: 30px 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  border-top: 5px solid #5ca4bb; }
+  footer.footer .footer-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    display: block;
+    clear: both; }
+    footer.footer .footer-container .footer-logo {
+      width: 20%;
+      float: left;
+      display: block; }
+      footer.footer .footer-container .footer-logo img {
+        width: 100%; }
+        footer.footer .footer-container .footer-logo img.bu-image {
+          max-width: 100px; }
+        footer.footer .footer-container .footer-logo img.nih-image {
+          max-width: 115px;
+          float: right; }
+    footer.footer .footer-container .footer-info {
+      width: 60%;
+      float: left;
+      display: block; }
+      footer.footer .footer-container .footer-info ul {
+        margin: 5px 0; }
+      footer.footer .footer-container .footer-info li {
+        display: inline-block;
+        list-style: none;
+        padding: 0; }
+
+/* Clear */
+.clear {
+  clear: both; }

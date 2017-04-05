@@ -1,0 +1,324 @@
+/* Main Styles for Health Literacy Tool Shed Sample Site
+Created by Victoria K. Chapman for Communicate Health */
+
+@import "vars";
+@import "mixins";
+
+/* Global */
+
+body {
+	margin:0;
+	padding:0;
+	background:$black;
+}
+
+.page-container {
+	width:100%;
+	margin:auto;
+	padding:0 0 60px 0;
+	background:#fff;
+}
+
+a {
+	color:$lightblue;
+	&:hover {
+		color:$green;
+	}
+}
+
+p, label, ul, ol {
+	font-family:$average;
+	font-size:1.2em;
+	letter-spacing:0.02em;
+}
+
+h2 {
+	font-family:$average;
+	font-size:2em;
+	letter-spacing:0.02em;
+	font-weight:normal;
+}
+
+/* Accessibility */
+
+a:focus {
+	outline:2px solid $orange;
+}
+
+
+/* Header */
+
+header.header {
+	@include container-block;
+	/* Header Logo */
+	.logo {
+		width:62%;
+		float:left;
+		display:block;
+		padding-top:35px;
+		padding-bottom:30px;
+		.logo-text {
+			display:block;
+			color:$green;
+			@include roboto-light;
+			font-size:1.9em;
+			letter-spacing:-0.01em;
+			margin:0;
+			padding:0;
+			.bold {
+				color:$mediumblue;
+				@include roboto-medium;
+			}
+		}
+		.tagline {
+			@include roboto-light;
+			color:$black;
+			font-size:1.26em;
+			letter-spacing:-0.008em;
+			margin:0;
+			padding:0;
+		}
+	}
+	/* Header Search Bar */
+	.search {
+		width:38%;
+		float:left;
+		display:block;
+		padding-top:35px;
+		padding-bottom:30px;
+		label {
+			color:$mediumblue;
+			@include roboto-medium;
+			font-size:1.1em;
+		}
+	}
+}
+
+/* Main Navigation */
+
+nav.main-nav {
+	width:100%;
+	background:$darkblue;
+	display:block;
+	clear:both;
+	ul.nav {
+		@include container-block;
+		@include roboto-light;
+		li {
+			display:inline-block;
+			text-align:center;
+			padding:10px 0;
+			width:calc(20% - 4px);
+			font-size:0.9em;
+			a {
+				color:#fff;
+				display:block;
+				padding:3px 15px;
+				border-right:1px solid #065165;
+				text-decoration:none;
+			}
+			&:hover {
+				@include green-gradient;
+				a {
+					border-right:0px;
+					margin-right:1px;
+				}
+			}
+			&:last-child {
+				a {
+					border-right:0;
+				}
+				&:hover {
+					a {
+						margin-right:0px;
+					}
+				}
+			}
+		}
+		li.current {
+			@include green-gradient;
+			a {
+				border-right:0;
+			}
+		}
+	}
+}
+
+/* Homepage Hero */
+
+.home-hero {
+	width:100%;
+	background:url("../images/hero-background.jpg") 70% 0 repeat-x;
+	background-size:90%;
+	height:375px;
+	display:block;
+	position:relative;
+	.hero-container {
+		@include container-block-inner;
+		.hero-text {
+			float:left;
+			width:65%;
+			height:375px;
+			&:before {
+				content: '';
+				display: inline-block;
+				height: 80%;
+				vertical-align: middle;
+				margin-right: -0.25em; /* Adjusts for spacing */
+			}
+			h1 {
+				font-size:2.2em;
+				color:#fff;
+				@include roboto-regular;
+				letter-spacing:0.03em;
+				text-shadow: 1px 1px 0px $darkblue;
+				vertical-align:middle;
+				width:100%;
+				display:inline-block;
+				strong {
+					@include roboto-bold;
+				}
+			}
+		}
+		.hero-figure {
+			float:right;
+			width:35%;
+			.image {
+				position:absolute;
+				bottom:0;
+				img {
+					width:100%;
+					max-width:302px;
+					bottom:0;
+					display:block;
+					position:relative;
+				}
+			}
+		}
+	}
+}
+
+/* Intro Section */
+
+#intro {
+	@include container-block-inner;
+	margin-top:80px;
+	.icon {
+		width:calc(25% - 20px);
+		margin-right:20px;
+		float:left;
+		img {
+			width:100%;
+			max-width:150px;
+		}
+	}
+	.text {
+		width:calc(75% - 80px);
+		float:left;
+		padding-right:80px;
+		p {
+			font-size:1.4em;
+			line-height:1.8em;
+			letter-spacing:0.02em;
+			margin:5px 0 10px;
+			@include roboto-light;
+			strong {
+				@include roboto-bold;
+				color:$darkblue;
+			}
+			a {
+				@include roboto-medium;
+			}
+		}
+	}
+}
+
+/* Form Section */
+
+#measure-form {
+	@include container-block-inner;
+	margin-top:70px;
+	form {
+		width:100%;
+		display:block;
+	}
+}
+
+form {
+	label {
+		width:25%;
+		display:inline-block;
+	}
+	input[type="text"], input[type="email"] {
+		padding:5px;
+		border:1px solid #e0e0e0;
+		height:18px;
+		margin:10px 0 25px;
+		display:inline-block;
+		width:65%;
+		max-width:725px;
+		font-family:$average;
+		font-size:1em;
+	}
+	textarea {
+		clear:both;
+		width:95%;
+		display:block;
+		max-width:990px;
+		padding:5px;
+		border:1px solid #a4a4a4;
+		font-family:$average;
+		font-size:1em;
+	}
+	input[type="submit"] {
+		@include black-button;
+	}
+}
+
+/* Footer */
+
+footer.footer {
+	background:$black;
+	color:#fff;
+	bottom:0;
+	padding:30px 20px;
+	@include roboto-light;
+	border-top:5px solid $lightblue;
+	.footer-container {
+		@include container-block;
+		.footer-logo {
+			width:20%;
+			float:left;
+			display:block;
+			img {
+				width:100%;
+				&.bu-image {
+					max-width:100px;
+				}
+				&.nih-image {
+					max-width:115px;
+					float:right;
+				}
+			}
+		}
+		.footer-info {
+			width:60%;
+			float:left;
+			display:block;
+			ul {
+				margin:5px 0;
+			}
+			li {
+				display:inline-block;
+				list-style:none;
+				padding:0;
+			}
+		}
+	}
+}
+
+/* Clear */
+
+.clear {
+	clear:both;
+}
