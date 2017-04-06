@@ -76,14 +76,71 @@
 }
 
 @mixin green-button {
-	@include robot-regular;
+	@include roboto-medium;
 	color:#fff;
 	background:$green;
-	padding:5px 8px;
-	font-size:1.4em;
+	padding:4px 8px;
+	font-size:1.25em;
 	border:0px;
 	letter-spacing:0.03em;
+	&:hover {
+		background:$darkblue;
+	}
 }
 
-/* Media Queries */
+/* Breakpoints */
+
+@mixin xsmall-mobile {
+  @media (max-width:350px) {
+    @content;
+  }
+}
+
+@mixin small-mobile {
+  @media (max-width:400px) {
+    @content;
+  }
+}
+
+@mixin med-mobile {
+  @media (max-width:500px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width:640px) {
+    @content;
+  }
+}
+
+@mixin not-mobile {
+  @media (min-width:641px) {
+    @content;
+  }
+}
+
+@mixin small-tablet {
+  @media (max-width:767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width:900px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width:1229px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width:1230px) {
+    @content;
+  }
+}
 
