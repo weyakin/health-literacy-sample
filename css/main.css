@@ -25,7 +25,7 @@ body {
   background: #fff; }
 
 a {
-  color: #5ca4bb; }
+  color: #007f9f; }
   a:hover {
     color: #00883d; }
 
@@ -593,7 +593,7 @@ footer.footer {
   padding: 30px 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  border-top: 5px solid #5ca4bb; }
+  border-top: 5px solid #007f9f; }
   footer.footer .footer-container {
     max-width: 1100px;
     margin: auto;
