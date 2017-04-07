@@ -501,6 +501,9 @@ nav#nav-mobile {
         padding: 0; }
         #intro .text p {
           font-size: 1.2em; } }
+  @media (max-width: 400px) {
+    #intro .text p {
+      font-size: 1.1em; } }
 
 /* Form Section */
 #measure-form {

@@ -516,6 +516,13 @@ nav#nav-mobile {
 			}
 		}
 	}
+	@include small-mobile {
+		.text {
+			p {
+				font-size:1.1em;
+			}
+		}
+	}
 }
 
 /* Form Section */
