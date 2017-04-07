@@ -385,7 +385,7 @@ nav#nav-mobile {
 				vertical-align: middle;
 				margin-right: -0.25em; /* Adjusts for spacing */
 			}
-			h1 {
+			h2 {
 				font-size:2.2em;
 				color:#fff;
 				@include roboto-regular;
@@ -399,7 +399,7 @@ nav#nav-mobile {
 				}
 			}
 			@include tablet {
-				h1 {
+				h2 {
 					strong br {
 						display:none;
 					}
@@ -408,7 +408,7 @@ nav#nav-mobile {
 			@include small-tablet {
 				height:250px;
 				width:55%;
-				h1 {
+				h2 {
 					font-size:1.8em;
 				}
 			}
@@ -543,7 +543,7 @@ nav#nav-mobile {
 }
 
 form {
-	label {
+	label span {
 		width:25%;
 		display:inline-block;
 		@include mobile {
@@ -557,7 +557,7 @@ form {
 		height:18px;
 		margin:10px 0 25px;
 		display:inline-block;
-		width:calc(75% - 16px);
+		width:calc(75% - 18px);
 		font-family:$average;
 		font-size:1em;
 		@include mobile {
