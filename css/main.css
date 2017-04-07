@@ -150,7 +150,7 @@ header.header {
       border: 1px solid #afafaf;
       height: 20px;
       display: inline-block;
-      margin: 0 3px 0 0;
+      margin: 0;
       width: calc(100% - 68px) !important;
       font-family: "Average Sans", sans-serif;
       font-size: 1em; }
