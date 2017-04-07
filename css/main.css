@@ -185,7 +185,7 @@ header.header {
           font-size: 1em; } }
     @media (max-width: 350px) {
       header.header .search {
-        max-width: 275px; } }
+        max-width: 284px; } }
 
 /* Main Navigation */
 nav.main-nav {
