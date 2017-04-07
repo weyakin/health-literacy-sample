@@ -11,7 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/modernizr.custom.js"></script>
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -42,7 +42,13 @@
             <!-- End Main Header -->
 
             <!-- Start Main Navigation -->
-            <nav class="main-nav">
+            <div id="nav-trigger">
+                <a href="#first-item">
+                    Menu <span aria-live="assertive" id="mobile-menu-reader" class="screenreader">Closed (Tap to Open)</span>
+                </a>
+            </div>
+
+            <nav class="main-nav" id="nav-main">
                 <ul class="nav">
                     <li class="current"><a href="#">Home</a>
                     </li><li><a href="#">Find Measures</a>
@@ -51,6 +57,8 @@
                     </li><li><a href="#">About</a></li>
                 </ul>
             </nav>
+
+            <nav id="nav-mobile"></nav>
             <!-- End Main Navigation -->
 
             <a name="content"></a>
@@ -127,8 +135,24 @@
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+
+        <!-- Nav for Mobile -->
+        <script>
+            $(document).ready(function(){
+                $("#nav-mobile").html($("#nav-main").html());
+                $("#nav-trigger a").click(function(){
+                    if ($("nav#nav-mobile ul").hasClass("expanded")) {
+                        $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+                        $(this).removeClass("open");
+                    } else {
+                        $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+                        $(this).addClass("open");
+                    }
+                });
+                $('#mobile-menu-reader').html($('#mobile-menu-reader').html() == 'Open (Tap to Close)' ? 'Closed (Tap to Open)' : 'Open (Tap to Close)');
+            });
+        </script>
+        </script>
 
     </body>
 </html>

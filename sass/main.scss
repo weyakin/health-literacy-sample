@@ -30,6 +30,9 @@ p, label, ul, ol {
 	font-family:$average;
 	font-size:1.2em;
 	letter-spacing:0.02em;
+	@include mobile {
+		font-size:1em;
+	}
 }
 
 h2 {
@@ -37,6 +40,9 @@ h2 {
 	font-size:2em;
 	letter-spacing:0.02em;
 	font-weight:normal;
+	@include mobile {
+		font-size:1.8em;
+	}
 }
 
 /* Accessibility */
@@ -57,6 +63,12 @@ h2 {
 
 a:focus, input:focus, textarea:focus {
 	outline:2px solid $orange;
+}
+
+.screenreader {
+	position: absolute !important;
+    color: transparent;
+    margin-left: -9999px;
 }
 
 
@@ -92,6 +104,18 @@ header.header {
 			margin:0;
 			padding:0;
 		}
+		@include mobile {
+			width:100%;
+		}
+		@include small-mobile {
+			padding-top:20px;
+			.logo-text {
+				font-size:1.55em;
+			}
+			.tagline {
+				font-size:1.03em;
+			}
+		}
 	}
 	/* Header Search Bar */
 	.search {
@@ -124,6 +148,25 @@ header.header {
 			display:inline-block;
 			top:1px;
 			position:relative;
+		}
+		@include tablet {
+			label {
+				font-size:1em;
+			}
+		}
+		@include mobile {
+			label {
+				font-size:1.1em;
+			}
+			width:100%;
+			clear:both;
+			padding-top:0;
+			max-width:335px;
+		}
+		@include small-mobile {
+			label {
+				font-size:1em;
+			}
 		}
 	}
 }
@@ -158,6 +201,16 @@ nav.main-nav {
 					margin-right:1px;
 				}
 			}
+			@include laptop {
+				font-size:0.8em;
+			}
+			@include tablet {
+				font-size:0.7em;
+				width:auto;
+				a {
+					padding:3px 30px;
+				}
+			}
 		}
 		li.current {
 			@include green-gradient;
@@ -168,6 +221,106 @@ nav.main-nav {
 	}
 }
 
+/* Mobile Nav */
+
+#nav-trigger {
+	display:none;
+	text-align:left;
+	a {
+		padding:10px 20px 10px 62px;
+		background-color:$darkblue;
+		color:#fff;
+		cursor:pointer;
+		text-transform: uppercase;
+		@include roboto-medium;
+		text-decoration:none;
+		display:block;
+		clear:both;
+		position:relative;
+		z-index:100;
+		&:before {
+			content: "";
+		    position: absolute;
+		    left: 0;
+		    top: 0.6em;
+		    width: 1.8em;
+		    height: 0.2em;
+		   	margin:1px 15px 5px 20px;
+		    background: #fff;
+		    box-shadow: 
+		      	0 0.4em 0 0 #fff,
+		    	0 0.8em 0 0 #fff;
+		}
+		&:hover, &.open {
+			background-color:darken($darkblue, 5%);
+		}
+		&.open:focus {
+			z-index:110;
+		}
+		&.open:after {
+			border-left:solid 7px transparent;
+			border-top:none;
+			border-bottom:solid 7px #fff;
+			border-right:solid 7px transparent;
+		}
+	}
+}
+
+nav#nav-mobile {
+	position:relative;
+	display:none;
+	z-index:100;
+	ul {
+		display:none;
+		list-style-type:none;
+		position:absolute;
+        left:0;
+        right:0;
+		text-align:left;
+		background-color:$darkblue;
+		margin:0 auto;
+		padding:0;
+	}
+	li {
+		display:block;
+		padding:0;
+		margin:0;
+		border-bottom:solid 1px darken($darkblue, 10%);
+		font-size:0.9em;
+		&:last-child {
+			border-bottom:none;
+		}
+	}
+	a {
+		display:block;
+		color:rgb(255,255,255);
+		padding:10px 20px;
+		text-decoration:none;
+		&:hover {
+			@include green-gradient;
+			color:#fff;
+		}
+		&:focus {
+			z-index:115;
+		}
+	}
+}
+
+@include small-tablet {
+	
+	#nav-trigger {
+		display:block;
+	}
+	nav#nav-main {
+		display:none;
+	}
+	nav#nav-mobile {
+		display: block;
+	}
+
+}
+
+
 /* Homepage Hero */
 
 .home-hero {
@@ -177,6 +330,12 @@ nav.main-nav {
 	height:375px;
 	display:block;
 	position:relative;
+	@include small-tablet {
+		height:250px;
+	}
+	@include mobile {
+		height:auto;
+	}
 	.hero-container {
 		@include container-block-inner;
 		.hero-text {
@@ -203,6 +362,27 @@ nav.main-nav {
 					@include roboto-bold;
 				}
 			}
+			@include small-tablet {
+				height:250px;
+				width:55%;
+				h1 {
+					font-size:1.8em;
+					strong br {
+						display:none;
+					}
+				}
+			}
+			@include mobile {
+				width:100%;
+				height:auto;
+				font-size:0.7em;
+				text-align:center;
+				position:relative;
+				float:none;
+				&:before {
+					display:none;
+				}
+			}
 		}
 		.hero-figure {
 			float:right;
@@ -217,6 +397,21 @@ nav.main-nav {
 					display:block;
 					position:relative;
 				}
+			}
+			@include tablet {
+				padding-right:35px;
+				.image img {
+					max-width:275px;
+				}
+			}
+			@include small-tablet {
+				width:40%;
+				.image img {
+					max-width:200px;
+				}
+			}
+			@include mobile {
+				display:none;
 			}
 		}
 	}
@@ -237,9 +432,8 @@ nav.main-nav {
 		}
 	}
 	.text {
-		width:calc(75% - 80px);
+		width:75%;
 		float:left;
-		padding-right:80px;
 		p {
 			font-size:1.4em;
 			line-height:1.8em;
@@ -255,6 +449,31 @@ nav.main-nav {
 			}
 		}
 	}
+	@include tablet {
+		.icon {
+			width:calc(35% - 20px);
+		}
+		.text {
+			width:65%;
+		}
+	}
+	@include mobile {
+		margin-top:30px;
+		.icon {
+			width:100%;
+			clear:both;
+			text-align:center;
+			margin-bottom:20px;
+		}
+		.text {
+			width:100%;
+			clear:both;
+			padding:0;
+			p {
+				font-size:1.2em;
+			}
+		}
+	}
 }
 
 /* Form Section */
@@ -266,12 +485,20 @@ nav.main-nav {
 		width:100%;
 		display:block;
 	}
+
+	p {
+		margin:30px 0;
+	}
 }
 
 form {
 	label {
 		width:25%;
 		display:inline-block;
+		@include mobile {
+			width:100%;
+			display:block;
+		}
 	}
 	input[type="text"], input[type="email"] {
 		padding:5px;
@@ -279,20 +506,30 @@ form {
 		height:18px;
 		margin:10px 0 25px;
 		display:inline-block;
-		width:65%;
-		max-width:725px;
+		width:calc(75% - 16px);
 		font-family:$average;
 		font-size:1em;
+		@include mobile {
+			width:calc(100% - 10px);
+			margin:5px 0 10px 0;
+			display:block;
+		}
 	}
 	textarea {
 		clear:both;
-		width:95%;
+		width:100%;
 		display:block;
 		max-width:990px;
 		padding:5px;
 		border:1px solid #a4a4a4;
 		font-family:$average;
 		font-size:1em;
+		@include mobile {
+			width:calc(100% - 10px);
+			margin:5px 0 10px 0;
+			display:block;
+			height:150px;
+		}
 	}
 	input[type="submit"] {
 		@include black-button;
@@ -324,6 +561,18 @@ footer.footer {
 					float:right;
 				}
 			}
+			@include mobile {
+				clear:both;
+				width:100%;
+				text-align:center;
+				padding:8px 0;
+				img {
+					float:none !important;
+					&.nih-image {
+						padding-top:15px;
+					}
+				}
+			}
 		}
 		.footer-info {
 			width:60%;
@@ -344,6 +593,13 @@ footer.footer {
 				&:last-child {
 					padding-left:40px;
 				}
+				@include laptop {
+					&:first-child, &:last-child {
+						text-align:center;
+						display:block;
+						padding:5px 0;
+					}
+				}
 				a {
 					color:#fff;
 					text-decoration:none;
@@ -351,6 +607,16 @@ footer.footer {
 						text-decoration:underline;
 					}
 				}
+			}
+			@include laptop {
+				ul {
+					padding:0;
+				}
+			}
+			@include mobile {
+				clear:both;
+				width:100%;
+				font-size:0.9em;
 			}
 		}
 	}

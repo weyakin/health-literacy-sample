@@ -57,6 +57,9 @@
 @mixin container-block-inner {
 	@include container-block;
 	max-width:1000px;
+	@include tablet {
+		width:85%;
+	}
 }
 
 /* Buttons */
