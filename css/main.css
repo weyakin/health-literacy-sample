@@ -331,13 +331,13 @@ nav#nav-mobile {
       color: #fff; }
     nav#nav-mobile a:focus {
       z-index: 115; }
-  nav#nav-mobile a#closenav {
+  nav#nav-mobile a.closenav {
     text-transform: uppercase;
     background: #177e9e;
     border-bottom: 1px solid #084352; }
-    nav#nav-mobile a#closenav:focus {
+    nav#nav-mobile a.closenav:focus {
       border-bottom: 0; }
-    nav#nav-mobile a#closenav:before {
+    nav#nav-mobile a.closenav:before {
       content: 'X';
       margin-right: 15px; }
 
