@@ -400,14 +400,15 @@ nav#nav-mobile {
         .home-hero .hero-container .hero-text h1 strong {
           font-family: "Roboto", sans-serif;
           font-weight: 700; }
+      @media (max-width: 900px) {
+        .home-hero .hero-container .hero-text h1 strong br {
+          display: none; } }
       @media (max-width: 767px) {
         .home-hero .hero-container .hero-text {
           height: 250px;
           width: 55%; }
           .home-hero .hero-container .hero-text h1 {
-            font-size: 1.8em; }
-            .home-hero .hero-container .hero-text h1 strong br {
-              display: none; } }
+            font-size: 1.8em; } }
       @media (max-width: 640px) {
         .home-hero .hero-container .hero-text {
           width: 100%;

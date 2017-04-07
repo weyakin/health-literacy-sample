@@ -395,14 +395,18 @@ nav#nav-mobile {
 					@include roboto-bold;
 				}
 			}
+			@include tablet {
+				h1 {
+					strong br {
+						display:none;
+					}
+				}
+			}
 			@include small-tablet {
 				height:250px;
 				width:55%;
 				h1 {
 					font-size:1.8em;
-					strong br {
-						display:none;
-					}
 				}
 			}
 			@include mobile {
