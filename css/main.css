@@ -583,7 +583,7 @@ form input[type="submit"] {
     cursor: pointer; }
   @media (max-width: 640px) {
     form input[type="submit"] {
-      font-size: 1.1em; } }
+      font-size: 1.14em; } }
 
 /* Footer */
 footer.footer {
@@ -655,7 +655,7 @@ footer.footer {
         footer.footer .footer-container .footer-info {
           clear: both;
           width: 100%;
-          font-size: 0.9em; } }
+          font-size: 1.05em; } }
 
 /* Clear & Show/Hide Elements */
 .mobile {
