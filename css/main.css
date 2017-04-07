@@ -115,16 +115,17 @@ header.header {
       header.header .logo {
         padding-top: 20px; }
         header.header .logo .logo-text {
-          font-size: 1.74em; }
+          font-size: 1.75em;
+          letter-spacing: 0.002em; }
         header.header .logo .tagline {
-          font-size: 1.157em; } }
+          font-size: 1.17em; } }
     @media (max-width: 350px) {
       header.header .logo {
         padding-top: 20px; }
         header.header .logo .logo-text {
           font-size: 1.55em; }
         header.header .logo .tagline {
-          font-size: 1.03em; } }
+          font-size: 1.04em; } }
   header.header .search {
     width: 38%;
     float: left;
@@ -461,6 +462,9 @@ nav#nav-mobile {
     width: calc(25% - 20px);
     margin-right: 20px;
     float: left; }
+    #intro .icon embed {
+      width: 100%;
+      max-width: 150px; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
       #intro .icon embed {
         width: 100%;
