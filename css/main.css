@@ -16,13 +16,15 @@ Created by Victoria K. Chapman for Communicate Health */
 body {
   margin: 0;
   padding: 0;
-  background: #222222; }
+  background: #222222;
+  color: #fff; }
 
 .page-container {
   width: 100%;
   margin: auto;
   padding: 0 0 60px 0;
-  background: #fff; }
+  background: #fff;
+  color: #222222; }
 
 a {
   color: #007f9f; }
