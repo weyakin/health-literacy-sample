@@ -167,7 +167,7 @@ header.header {
 			@include green-button;
 			width:45px;
 			display:inline-block;
-			top:1px;
+			top:0;
 			position:relative;
 		}
 		@include tablet {
@@ -183,6 +183,9 @@ header.header {
 			clear:both;
 			padding-top:0;
 			max-width:338px;
+			input[type="submit"] {
+				top:1px;
+			}
 		}
 		@include small-mobile {
 			label span {
