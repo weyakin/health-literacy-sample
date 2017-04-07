@@ -304,6 +304,18 @@ nav#nav-mobile {
 			z-index:115;
 		}
 	}
+	a#closenav {
+		text-transform:uppercase;
+		background:#177e9e;
+		border-bottom:1px solid $darkblue;
+		&:focus {
+			border-bottom:0;
+		}
+		&:before {
+			content:'X';
+			margin-right:15px;
+		}
+	}
 }
 
 @include small-tablet {
@@ -489,6 +501,9 @@ nav#nav-mobile {
 	p {
 		margin:30px 0;
 	}
+	@include mobile {
+		margin-top:30px;
+	}
 }
 
 form {
@@ -622,7 +637,14 @@ footer.footer {
 	}
 }
 
-/* Clear */
+/* Clear & Show/Hide Elements */
+
+.mobile {
+	display:none !important;
+	@include small-tablet {
+		display:block !important;
+	}
+}
 
 .clear {
 	clear:both;

@@ -76,6 +76,9 @@
 		background:$green;
 		cursor:pointer;
 	}
+	@include mobile {
+		font-size:1.1em;
+	}
 }
 
 @mixin green-button {
