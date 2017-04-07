@@ -654,8 +654,7 @@ footer.footer {
       @media (max-width: 640px) {
         footer.footer .footer-container .footer-info {
           clear: both;
-          width: 100%;
-          font-size: 1.05em; } }
+          width: 100%; } }
 
 /* Clear & Show/Hide Elements */
 .mobile {
