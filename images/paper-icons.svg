@@ -16,7 +16,7 @@
     <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
   </feMerge>
 </filter>
-<g style="filter:url(#dropshadow)" alt="Stylized icon of a medical paper with rounded corners, a checkmark, and lines representing inormation.">
+<g style="filter:url(#dropshadow)" title="Stylized icon of a medical paper with rounded corners, a checkmark, and lines representing inormation.">
 	<g>
 		<defs>
 			<rect id="SVGID_1_" x="66.561" y="60.221" width="237.667" height="292.033"/>
