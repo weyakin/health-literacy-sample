@@ -115,6 +115,15 @@ header.header {
 		@include small-mobile {
 			padding-top:20px;
 			.logo-text {
+				font-size:1.75em;
+			}
+			.tagline {
+				font-size:1.17em;
+			}
+		}
+		@include xsmall-mobile {
+			padding-top:20px;
+			.logo-text {
 				font-size:1.55em;
 			}
 			.tagline {
@@ -172,6 +181,9 @@ header.header {
 			label {
 				font-size:1em;
 			}
+			max-width:310px;
+		}
+		@include xsmall-mobile {
 			max-width:275px;
 		}
 	}

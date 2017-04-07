@@ -115,6 +115,13 @@ header.header {
       header.header .logo {
         padding-top: 20px; }
         header.header .logo .logo-text {
+          font-size: 1.75em; }
+        header.header .logo .tagline {
+          font-size: 1.17em; } }
+    @media (max-width: 350px) {
+      header.header .logo {
+        padding-top: 20px; }
+        header.header .logo .logo-text {
           font-size: 1.55em; }
         header.header .logo .tagline {
           font-size: 1.03em; } }
@@ -169,9 +176,12 @@ header.header {
           font-size: 1.1em; } }
     @media (max-width: 400px) {
       header.header .search {
-        max-width: 275px; }
+        max-width: 310px; }
         header.header .search label {
           font-size: 1em; } }
+    @media (max-width: 350px) {
+      header.header .search {
+        max-width: 275px; } }
 
 /* Main Navigation */
 nav.main-nav {
