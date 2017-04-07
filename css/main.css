@@ -142,7 +142,7 @@ header.header {
       color: #007f9f;
       font-family: "Roboto", sans-serif;
       font-weight: 500;
-      font-size: 1.1em;
+      font-size: 0.9em;
       display: block;
       width: 100%;
       margin-bottom: 4px; }
@@ -169,9 +169,9 @@ header.header {
       position: relative; }
       header.header .search input[type="submit"]:hover {
         background: #084352; }
-    @media (max-width: 900px) {
+    @media (max-width: 767px) {
       header.header .search label span {
-        font-size: 1em; } }
+        font-size: 0.8em; } }
     @media (max-width: 640px) {
       header.header .search {
         width: 100%;
@@ -179,14 +179,12 @@ header.header {
         padding-top: 0;
         max-width: 338px; }
         header.header .search label span {
-          font-size: 1.1em; }
+          font-size: 1em; }
         header.header .search input[type="submit"] {
           top: 1px; } }
     @media (max-width: 400px) {
       header.header .search {
-        max-width: 340px; }
-        header.header .search label span {
-          font-size: 1em; } }
+        max-width: 340px; } }
     @media (max-width: 350px) {
       header.header .search {
         max-width: 284px; } }
