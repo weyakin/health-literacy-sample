@@ -3,9 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="316.854px" height="365.168px" viewBox="0 0 316.854 365.168" enable-background="new 0 0 316.854 365.168"
-	 xml:space="preserve" aria-labelledby="title desc" role="icon">
-<title id="title">Icon of medical documents</title>
-<desc id="desc">Stylized icon of a medical paper with rounded corners, a checkmark, and lines representing information</desc>
+	 xml:space="preserve" aria-labelledby="title desc" role="img">
 <filter id="dropshadow" height="130%">
   <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> <!-- stdDeviation is how much to blur -->
   <feOffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
@@ -17,7 +15,11 @@
     <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
   </feMerge>
 </filter>
-<g style="filter:url(#dropshadow)">
+
+<title id="title">Icon of medical documents</title>
+<desc id="desc">Stylized icon of a medical paper with rounded corners, a checkmark, and lines representing information</desc>
+
+<g style="filter:url(#dropshadow)" role="presentation">
 	<g>
 		<defs>
 			<rect id="SVGID_1_" x="66.561" y="60.221" width="237.667" height="292.033"/>
@@ -52,7 +54,7 @@
 	</g>
 	
 		<text transform="matrix(-0.7071 -0.7071 -0.7071 0.7071 183.6382 139.1479)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="43.9796" aria-hidden="true">L</text>
-	<g>
+	<g role="presentation">
 		<defs>
 			<rect id="SVGID_3_" x="66.561" y="60.221" width="237.667" height="292.033"/>
 		</defs>
@@ -63,7 +65,7 @@
 			181.273,136.784 169.611,125.123 171.881,122.852 180.837,131.808 199.527,113.118 202.233,115.824 		"/>
 	</g>
 </g>
-<g style="filter:url(#dropshadow)">
+<g style="filter:url(#dropshadow)" role="presentation">
 	<g>
 		<defs>
 			<rect id="SVGID_5_" x="11.313" y="13.592" width="237.666" height="292.032"/>
@@ -104,7 +106,7 @@
 	</g>
 	
 		<text transform="matrix(-0.7071 -0.7071 -0.7071 0.7071 128.3901 92.519)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="43.9796" aria-hidden="true">L</text>
-	<g>
+	<g role="presentation">
 		<defs>
 			<rect id="SVGID_7_" x="11.313" y="13.592" width="237.666" height="292.032"/>
 		</defs>
