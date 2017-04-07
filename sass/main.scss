@@ -144,7 +144,7 @@ header.header {
 		display:block;
 		padding-top:35px;
 		padding-bottom:30px;
-		label {
+		label span {
 			color:$mediumblue;
 			@include roboto-medium;
 			font-size:1.1em;
@@ -169,12 +169,12 @@ header.header {
 			position:relative;
 		}
 		@include tablet {
-			label {
+			label span {
 				font-size:1em;
 			}
 		}
 		@include mobile {
-			label {
+			label span {
 				font-size:1.1em;
 			}
 			width:100%;
@@ -183,7 +183,7 @@ header.header {
 			max-width:338px;
 		}
 		@include small-mobile {
-			label {
+			label span {
 				font-size:1em;
 			}
 			max-width:340px;
@@ -466,7 +466,7 @@ nav#nav-mobile {
 		width:calc(25% - 20px);
 		margin-right:20px;
 		float:left;
-		embed {
+		object {
 			width:100%;
 			max-width:150px;
 		}
