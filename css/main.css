@@ -27,7 +27,7 @@ body {
 a {
   color: #5ca4bb; }
   a:hover {
-    color: #229857; }
+    color: #00883d; }
 
 p, label, ul, ol {
   font-family: "Average Sans", sans-serif;
@@ -92,7 +92,7 @@ header.header {
     padding-bottom: 30px; }
     header.header .logo .logo-text {
       display: block;
-      color: #229857;
+      color: #00883d;
       font-family: "Roboto", sans-serif;
       font-weight: 300;
       font-size: 1.9em;
@@ -156,7 +156,7 @@ header.header {
       font-family: "Roboto", sans-serif;
       font-weight: 500;
       color: #fff;
-      background: #229857;
+      background: #00883d;
       padding: 4px 8px;
       font-size: 1.25em;
       border: 0px;
@@ -579,7 +579,7 @@ form input[type="submit"] {
   font-size: 1.18em;
   letter-spacing: 0.03em; }
   form input[type="submit"]:hover {
-    background: #229857;
+    background: #00883d;
     cursor: pointer; }
   @media (max-width: 640px) {
     form input[type="submit"] {
