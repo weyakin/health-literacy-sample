@@ -133,7 +133,7 @@ header.header {
 			}
 			.tagline {
 				font-size:1.03em;
-				letter-spacing:0.001em;
+				letter-spacing:0.0005em;
 			}
 		}
 	}
@@ -152,13 +152,12 @@ header.header {
 			width:100%;
 			margin-bottom:4px;
 		}
-		input[type="search"] {
-			padding:5px;
+		input[type="text"] {
 			border:1px solid #afafaf;
-			height:32px;
+			height:20px;
 			display:inline-block;
-			margin-right:3px;
-			width:calc(100% - 48px);
+			margin:0 3px 0 0;
+			width:calc(100% - 68px) !important;
 			font-family:$average;
 			font-size:1em;
 		}
@@ -181,13 +180,13 @@ header.header {
 			width:100%;
 			clear:both;
 			padding-top:0;
-			max-width:336px;
+			max-width:338px;
 		}
 		@include small-mobile {
 			label {
 				font-size:1em;
 			}
-			max-width:310px;
+			max-width:340px;
 		}
 		@include xsmall-mobile {
 			max-width:275px;

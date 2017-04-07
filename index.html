@@ -10,7 +10,7 @@
         <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
         <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-        <link rel="shortcut icon" href="favoicon.ico">
+        <link rel="shortcut icon" href="favicon.ico">
         <link rel="apple-touch-icon" href="favicon.png">
         <!-- Place favicon.ico in the root directory -->
 
@@ -37,9 +37,9 @@
                     <p class="tagline">A database of health literacy measures</p>
                 </div>
                 <div class="search">
-                    <form>
+                    <form role="search">
                         <label>Search by Name of Measure</label>
-                        <input type="search" role="search"><input type="submit" value="Go">
+                        <input type="text"><input type="submit" value="Go">
                     </form>
                 </div>
             </header>
@@ -154,7 +154,9 @@
                         $(this).addClass("open");
                     }
                 });
-                $('#mobile-menu-reader').html($('#mobile-menu-reader').html() == 'Open (Tap to Close)' ? 'Closed (Tap to Open)' : 'Open (Tap to Close)');
+                $('#nav-trigger a').click(function () {
+                    $('#mobile-menu-reader').html($('#mobile-menu-reader').html() == 'Open (Tap to Close)' ? 'Closed (Tap to Open)' : 'Open (Tap to Close)');
+                });
             });
         </script>
         </script>
