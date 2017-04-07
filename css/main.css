@@ -46,6 +46,10 @@ h2 {
     h2 {
       font-size: 1.8em; } }
 
+input, textarea {
+  -webkit-appearance: none;
+  border-radius: 0px; }
+
 /* Accessibility */
 .skiptocontent a {
   position: absolute;

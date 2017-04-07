@@ -45,6 +45,11 @@ h2 {
 	}
 }
 
+input, textarea {
+	-webkit-appearance: none;
+	border-radius:0px;
+}
+
 /* Accessibility */
 
 .skiptocontent a {
