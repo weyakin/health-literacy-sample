@@ -511,15 +511,8 @@ nav#nav-mobile {
 			width:100%;
 			clear:both;
 			padding:0;
-			p {
+			h2 {
 				font-size:1.2em;
-			}
-		}
-	}
-	@include small-mobile {
-		.text {
-			p {
-				font-size:1.1em;
 			}
 		}
 	}
