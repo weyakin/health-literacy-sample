@@ -457,9 +457,13 @@ nav#nav-mobile {
 		width:calc(25% - 20px);
 		margin-right:20px;
 		float:left;
-		img {
-			width:100%;
-			max-width:150px;
+		@media only screen and (-webkit-min-device-pixel-ratio:1.5), 
+		only screen and (min--moz-device-pixel-ratio:1.5),
+		only screen and (min-resolution:240dpi){
+			embed {
+				width:100%;
+				max-width:150px;
+			}
 		}
 	}
 	.text {
