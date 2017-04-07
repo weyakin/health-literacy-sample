@@ -123,9 +123,10 @@ header.header {
       header.header .logo {
         padding-top: 20px; }
         header.header .logo .logo-text {
-          font-size: 1.55em; }
+          font-size: 1.5em; }
         header.header .logo .tagline {
-          font-size: 1.04em; } }
+          font-size: 1.03em;
+          letter-spacing: 0.001em; } }
   header.header .search {
     width: 38%;
     float: left;

@@ -125,10 +125,11 @@ header.header {
 		@include xsmall-mobile {
 			padding-top:20px;
 			.logo-text {
-				font-size:1.55em;
+				font-size:1.5em;
 			}
 			.tagline {
-				font-size:1.04em;
+				font-size:1.03em;
+				letter-spacing:0.001em;
 			}
 		}
 	}
