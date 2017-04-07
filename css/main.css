@@ -476,18 +476,18 @@ nav#nav-mobile {
   #intro .text {
     width: 75%;
     float: left; }
-    #intro .text p {
+    #intro .text h2 {
       font-size: 1.4em;
       line-height: 1.8em;
       letter-spacing: 0.02em;
       margin: 5px 0 10px;
       font-family: "Roboto", sans-serif;
       font-weight: 300; }
-      #intro .text p strong {
+      #intro .text h2 strong {
         font-family: "Roboto", sans-serif;
         font-weight: 700;
         color: #084352; }
-      #intro .text p a {
+      #intro .text h2 a {
         font-family: "Roboto", sans-serif;
         font-weight: 500; }
   @media (max-width: 900px) {
